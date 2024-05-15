@@ -9,3 +9,41 @@
 	https://media.licdn.com/dms/image/D5622AQGFo3-iRzZEQA/feedshare-shrink_2048_1536/0/1713111320439?e=1718841600&v=beta&t=MB5bofFTmoSKlLvxeK04iAG8H5Yt1fEXXTV33QmTU7I
 
 
+_______________________________________________________________________________________
+
+Instructions :
+	Choose either AURA or LWC as per your choice
+	Test Class is nice to have
+	Please ensure that the code that you have written is project deployable ready.
+	Please ensure relevant information like what settings are required for the assignment to work.
+	We advise you to make assumptions if anything is not clear, however please clearly state any assumptions you would have made upfront in the beginning of the interview.
+Problem Statement
+	As part of the Question Answer forum, the client has asked to build a functionality which provides the following:
+	Ability for the users to ask a question.
+	Once an user asks a question they cannot be altered or modified except for the creator of the question.
+	Ability for the any user to provide answer to the question.
+	Once an user answer a question they cannot be altered or modified except for the creator of the answer.
+	There can be multiple answers to a given question.
+	Users should have an ability to upvote or downvote the answer.
+	The list showing the answers should be sorted by the ratings followed by the date of creation.
+	The question creator should have the ability to select the best answer.
+	Once the best answer is selected, the option to answer a question should be disabled.
+	Below is the recommended data model. Please note you can modify the object model with proper justifications.
+
+Create a custom object
+	Label: Question
+	API Name: Question__c
+
+S.No.	Field Name	Type	Description
+	1	Name	Text(80)	Name or title for the question
+	2	Description__c	Rich Text Area	Detailed Description for the question
+
+Create a custom object
+	Label: Answer
+	API Name: Answer__c
+
+S.No.	Field Name	Type	Description
+	1	Name	Text(80)	Name or title for the answer
+	2	Description__c	Rich Text Area	Detailed Description for the answer
+	3	Rating	Number	Rating based on likes and dislikes
+	4	Question__c	Master Detail or Lookup	To tag answer to correct question
