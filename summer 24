@@ -50,5 +50,48 @@ S.No.	Field Name	Type	Description
 	3	Rating	Number	Rating based on likes and dislikes
 	4	Question__c	Master Detail or Lookup	To tag answer to correct question
 
-
+[
+  {
+    "Id": 1,
+    "capacity": 5,
+    "occupied": 2,
+    "free": 3
+  },
+  {
+    "Id": 2,
+    "capacity": 5,
+    "occupied": 3,
+    "free": 2
+  },
+  {
+    "Id": 3,
+    "capacity": 5,
+    "occupied": 0,
+    "free": 5
+  },
+  {
+    "Id": 4,
+    "capacity": 5,
+    "occupied": 1,
+    "free": 4
+  },
+  {
+    "Id": 5,
+    "capacity": 5,
+    "occupied": 4,
+    "free": 1
+  },
+  {
+    "Id": 6,
+    "capacity": 5,
+    "occupied": 0,
+    "free": 5
+  },
+  {
+    "Id": 7,
+    "capacity": 5,
+    "occupied": 1,
+    "free": 4
+  }
+]
 
